@@ -1,0 +1,42 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+.venv/
+venv/
+env/
+.env
+pip-log.txt
+
+# ─── Storage (uploaded and processed videos) ──────────────────────────────────
+backend/storage/uploads/
+backend/storage/outputs/
+
+# ─── YOLO model weights (auto-downloaded, no need to commit) ──────────────────
+backend/models/*.pt
+backend/models/*.onnx
+
+# ─── Node / Frontend ──────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# ─── OS / Editor ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ─── Ultralytics cache ────────────────────────────────────────────────────────
+runs/
+ultralytics/

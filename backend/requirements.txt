@@ -1,0 +1,26 @@
+# ─── Web framework ────────────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+aiofiles>=23.2.1
+
+# ─── Configuration ────────────────────────────────────────────────────────────
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+python-dotenv>=1.0.0
+
+# ─── Computer Vision ──────────────────────────────────────────────────────────
+opencv-python>=4.10.0
+numpy>=1.26.0
+
+# ─── YOLO Detection ───────────────────────────────────────────────────────────
+# Installs PyTorch automatically as a dependency.
+# For GPU support, install PyTorch with CUDA separately:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+ultralytics>=8.2.0
+
+# ─── Multi-Object Tracking ────────────────────────────────────────────────────
+# supervision provides Detections, annotators, and drawing utilities.
+# trackers provides ByteTrackTracker (supervision 0.28+ deprecated sv.ByteTrack).
+supervision>=0.22.0
+trackers>=0.4.0

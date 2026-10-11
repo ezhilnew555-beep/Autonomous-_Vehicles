@@ -1,0 +1,215 @@
+{
+  "analysis_id": "analysis_3bba308f6c66",
+  "video_id": "test_analysis_vid_001",
+  "status": "COMPLETED",
+  "progress": 100.0,
+  "current_step": "Generating final result",
+  "road_status": "SAFE",
+  "road_status_description": "Road corridor is clear. Cruising safely with no immediate collision threats.",
+  "current_danger": "No immediate danger — road is clear",
+  "vehicle_action": "CONTINUE",
+  "video_info": {
+    "filename": "test_video.mp4",
+    "duration_sec": 0.6,
+    "video_fps": 25.0,
+    "total_frames": 15,
+    "status": "Ready"
+  },
+  "safety_analysis": {
+    "risk_level": "SAFE",
+    "threat_object": "None",
+    "distance_m": null,
+    "ttc_sec": null,
+    "movement_direction": "Clear road",
+    "prediction_confidence": "95% (Kalman Filter)"
+  },
+  "road_information": {
+    "road_type": "Urban Road",
+    "traffic_signal": "Not detected",
+    "intersection": "Not detected",
+    "speed_limit": "Not detected",
+    "detected_signs": [
+      "Not detected"
+    ]
+  },
+  "object_counts": {
+    "current_frame": {
+      "Cars": 0,
+      "Bikes": 0,
+      "Bicycles": 0,
+      "People": 0,
+      "Animals": 0,
+      "Buses": 0,
+      "Trucks": 0,
+      "Auto-rickshaws": 0,
+      "Other": 0,
+      "Unknown": 0
+    },
+    "total_unique": {
+      "Cars": 0,
+      "Bikes": 0,
+      "Bicycles": 0,
+      "People": 0,
+      "Animals": 0,
+      "Buses": 0,
+      "Trucks": 0,
+      "Auto-rickshaws": 0,
+      "Other": 0,
+      "Unknown": 0
+    },
+    "total_unique_all": 0,
+    "active_frame_total": 0
+  },
+  "path_info": {
+    "status": "SAFE",
+    "clearance_meters": 333.3,
+    "is_replanned": false,
+    "path_points": [
+      [
+        160.0,
+        240.0
+      ],
+      [
+        160.0,
+        230.8
+      ],
+      [
+        160.0,
+        221.7
+      ],
+      [
+        160.0,
+        212.5
+      ],
+      [
+        160.0,
+        203.3
+      ],
+      [
+        160.0,
+        194.2
+      ],
+      [
+        160.0,
+        185.0
+      ],
+      [
+        160.0,
+        175.8
+      ],
+      [
+        160.0,
+        166.7
+      ],
+      [
+        160.0,
+        157.5
+      ],
+      [
+        160.0,
+        148.3
+      ],
+      [
+        160.0,
+        139.2
+      ],
+      [
+        160.0,
+        130.0
+      ],
+      [
+        160.0,
+        120.8
+      ],
+      [
+        160.0,
+        111.7
+      ],
+      [
+        160.0,
+        102.5
+      ],
+      [
+        160.0,
+        93.3
+      ],
+      [
+        160.0,
+        84.2
+      ],
+      [
+        160.0,
+        75.0
+      ],
+      [
+        160.0,
+        65.8
+      ],
+      [
+        160.0,
+        56.7
+      ],
+      [
+        160.0,
+        47.5
+      ],
+      [
+        160.0,
+        38.3
+      ],
+      [
+        160.0,
+        29.2
+      ],
+      [
+        160.0,
+        20.0
+      ]
+    ],
+    "blocked_regions": []
+  },
+  "timeline": [],
+  "summary": {
+    "executive_summary": "Autonomous road analysis completed successfully over 0.6s (15 frames). The road corridor remained clear of major traffic obstacles. The vehicle maintained a safe cruising path throughout the trajectory with 0 collisions.",
+    "traffic_breakdown": "No stationary or moving vehicles or pedestrians were identified in the primary corridor.",
+    "hazard_assessment": "No critical collision hazards or close-proximity conflicts were detected. Cruising speed was maintained without requiring emergency interventions.",
+    "navigation_assessment": "The adaptive quintic polynomial planner evaluated collision-free trajectories with an average replanning latency of 0.62 ms. Path trajectory smoothness was scored at 1.00 (excellent (minimal lateral jerk)), strictly respecting drivable road boundaries.",
+    "safety_verdict": "OVERALL ROAD STATUS: SAFE. ZERO COLLISIONS DETECTED (100% collision-free navigation). All dynamic obstacles and traffic regulations were arbitrated according to deterministic functional safety rules."
+  },
+  "performance": {
+    "fps": 5.0,
+    "replanning_latency_ms": 0.62,
+    "path_smoothness": 1.0,
+    "collision_count": 0,
+    "total_frames": 15,
+    "processing_time_sec": 2.97,
+    "total_replans": 0,
+    "total_collision_events": 0,
+    "scenario_completion_rate": "100%",
+    "collision_free_rate": "100%"
+  },
+  "technical_details": {
+    "yolo_detections": [],
+    "tracked_objects": [],
+    "kalman_predictions": [],
+    "ttc_records": [],
+    "occupancy_cost": 0.0,
+    "environment_rules": [],
+    "active_signals": [],
+    "active_signs": [],
+    "object_detection": "YOLO",
+    "tracking": "ByteTrack",
+    "prediction": "Kalman Filter",
+    "risk": "Trajectory Conflict + TTC",
+    "decision": "Rule-Based Decision Engine",
+    "path_planning": "Occupancy Grid + Candidate Paths",
+    "replanning": "Dynamic Replanning",
+    "video": "OpenCV",
+    "backend": "FastAPI",
+    "frontend": "React + Vite"
+  },
+  "annotated_video_url": "/api/v1/video/result/test_analysis_vid_001",
+  "error": null,
+  "created_at": 1790018726.8843172,
+  "completed_at": 1790018729.8595772
+}
